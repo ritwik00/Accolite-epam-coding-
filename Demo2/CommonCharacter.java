@@ -27,6 +27,14 @@ public class CommonCharacter {
         }
          
         firstStringSet.retainAll(secondStringSet);
+        //OR
+
+        
+        // for (char c : first) {
+        //     if (second.contains(c)) {
+        //         System.out.println(c);
+        //     }
+        // }
          
         System.out.println("Common characters in alphabetical order : "+firstStringSet);
          
