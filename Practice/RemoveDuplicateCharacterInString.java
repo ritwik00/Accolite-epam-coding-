@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Set;
 
 public class RemoveDuplicateCharacterInString {
@@ -23,13 +24,11 @@ public class RemoveDuplicateCharacterInString {
 
     public static String removeDuplicate(String str) {
         // Create a HashMap to store characters as keys
-        HashMap<Character, Boolean> map = new HashMap<>();
+        HashMap<Character, Boolean> map = new LinkedHashMap<>();
         StringBuilder result = new StringBuilder();
 
         // Iterate through each character of the string
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            
+        for (Character ch : str.toCharArray()) {  
             // If the character is not already in the map, append it to the result
             if (!map.containsKey(ch)) {
                 map.put(ch, true);

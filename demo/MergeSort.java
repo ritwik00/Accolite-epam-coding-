@@ -44,7 +44,7 @@ public class MergeSort {
         // Initial index of merged subarray array
         int k = l;
         while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) { // sorting logic
+            if (L[i] <= R[j]) { // sorting logic 
                 arr[k++] = L[i++];
             }
             else {

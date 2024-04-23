@@ -1,7 +1,7 @@
 
 class AmnstrongNumber{
 	public static void main(String[] args){
-		 System.out.println((checkArmstrongNumber(9474))?true:false);
+		 System.out.println((checkArmstrongNumber(153))?true:false);
 	}
 	
 	public static boolean checkArmstrongNumber(int n){

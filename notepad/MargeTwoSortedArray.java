@@ -11,7 +11,7 @@ class MargeTwoSortedArray{
 	}
 	
 	public static int[] mergeArray(int[] a, int[] b){
-		Set<Integer> set = new HashSet<Integer>();
+		Set<Integer> set = new TreeSet<Integer>();
 		int i=0,j=0,k=0;
 		//copying all the array element in HashSet , because HashSet doesnot accepts duplicate values.
 		while(i<a.length){
@@ -27,7 +27,7 @@ class MargeTwoSortedArray{
 			newArray[k++] = n;
 		}
 		//sort the array
-		Arrays.sort(newArray);
+		// Arrays.sort(newArray);
 		//return the newArray
 		return newArray;
 	}

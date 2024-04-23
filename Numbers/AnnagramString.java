@@ -13,7 +13,7 @@ public class AnnagramString {
 	}
 
 	public static boolean isAnnagram(String s1, String s2){
-		s1=removeSpace(s1);
+		s1=removeSpace(s1);//s1.replaceAll("\\s","")
 		s2=removeSpace(s2);
 		if(s1.length() != s2.length()){
 			return false;

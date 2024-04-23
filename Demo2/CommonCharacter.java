@@ -30,8 +30,8 @@ public class CommonCharacter {
         //OR
 
         
-        // for (char c : first) {
-        //     if (second.contains(c)) {
+        // for (char c : firstStringSet) {
+        //     if (secondStringSet.contains(c)) {
         //         System.out.println(c);
         //     }
         // }

@@ -21,10 +21,13 @@ class RemoveStar{
 				st.push(ch[i]);
 			}
 		}
+		//copy all the element in the StringBuilder
 		while(st.size() != 0){
 			sb.append(st.pop());
 		}
+		//converted into the String and reverse it
 		String str = sb.reverse().toString();
+		//remove all the white space
 		return str.replaceAll("\\s","");
 	}
 }

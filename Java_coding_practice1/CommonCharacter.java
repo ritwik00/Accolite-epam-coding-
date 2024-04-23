@@ -2,8 +2,8 @@
 import java.util.*;
 class CommonCharacter{
 	public static void main(String[] args){
-		 String s = "java hjk ghjk";
-        String s1= "jaha fghjk ";
+		 String s = "mother";
+        String s1= "sister ";
        commonCharacter(s,s1);
 	}
 	
@@ -19,13 +19,15 @@ class CommonCharacter{
 			second.add(c);
 		}
 
+		//show only the common character 
         first.retainAll(second);
         System.out.println(first);
-		for (char c : first) {
-            if (second.contains(c)) {
-                System.out.println(c);
-            }
-        }
+		
+		// for (char c : first) {
+        //     if (second.contains(c)) {
+        //         System.out.println(c);
+        //     }
+        // }
 
 	}
 }
